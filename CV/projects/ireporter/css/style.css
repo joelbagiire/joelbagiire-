@@ -1,0 +1,273 @@
+:root{
+    --color1:#000000;
+    --color2:#ff4500;
+    --color3:#ffffff;
+    --color4:#333333;
+    --color5:#ff0000;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: var(--color1);
+    height: 30vh;
+    color: var(--color3);
+    box-sizing: border-box;
+}
+header form{
+    margin-top: -90px;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+header form input{
+    outline: none;
+    height: 25px;
+    position: relative;
+    border: 1px solid var(--color1);
+}
+header form button{
+    height: 28px;
+    width: 89px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    background: var(--color2);
+    border: none;
+    color: var(--color3);
+}
+header form button:hover{
+    border: 1px solid var(--color2);
+    cursor: pointer;
+}
+header form a{
+    color: var(--color3);
+    text-decoration: none;
+}
+header form a:hover{
+    text-decoration: underline;
+    color: var(--color5);
+}
+h1{
+    position: relative;
+    font-size: 70px;
+    margin-left: 20px;
+    padding-top: 50px;
+    width: 40%;
+    font-weight: bolder;
+}
+header h1 span{
+    color: var(--color5);
+    font-size: 70px;
+}
+main{
+    margin-top: -17px;
+    height: 200px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: var(--color4);
+    border-bottom: 2px solid var(--color2);
+}
+main p{
+    float: right;
+    position: relative;
+    width: 70%;
+    background: var(--color3);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+main div{
+    margin-top: 50px;
+}
+main div input{
+    outline: none;
+    height: 25px;
+    border: 1px solid var(--color4);
+    float: left;
+}
+main  div button{
+    height: 28px;
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    background: var(--color2);
+    border: none;
+    float: left;
+    color: var(--color3);
+}
+main div button:hover{
+    border: 1px solid var(--color2);
+    cursor: pointer;
+}
+section div{
+    float: right;
+    width: 35%;
+    margin-top: -25em;
+    position: relative;
+}
+section div h3{
+    font-size: 25px;
+    font-weight: 900;
+}
+section div input{
+    margin-bottom: 15px;
+    margin-right: 5px;
+    outline: none;
+    height: 25px;
+    border: 1px solid var(--color1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+section div button{
+    height: 28px;
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    background: var(--color2);
+    border: none;
+    float: left;
+    text-align: center;
+    color: var(--color3);
+}
+section div button:hover{
+    border: 1px solid var(--color2);
+    cursor: pointer;
+}
+section p{
+    width: 50%;
+    padding: 20px;
+    background: var(--color4);
+    margin-top: 40px;
+    margin-left: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+footer{
+    background: var(--color2);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+@media(max-width:768px){
+    header h1{
+        margin-top: -50px;
+    }
+    header form{
+        margin-top: -40px;
+        margin-left: 5px;
+        float: none;
+    }
+    main{
+        height: 390px;
+    }
+    main p{
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 90%;
+        float: none;
+    }
+    main div input{
+        float: none;
+        width: 98%;
+    }
+    main  div button{
+        float: none;
+        width: 100%;
+    }
+    section div button{
+        float: none;
+    }
+}
+@media(max-width:360px),(max-width:540px),(max-width:640px),(max-width:375px),(max-width:414px){
+    header{
+        height: 300px;
+        text-align: center;
+        border-bottom: 2px solid var(--color5);
+    }
+    header h1{
+        font-size: 45px;
+        padding-bottom: 17px;
+    }
+    header form{
+        margin-left: -15px;
+        text-align: center;
+        width: 70%;
+    }
+    header form input{
+        margin-bottom: 10px;
+        border: none;
+        margin-left: 25%;
+        width: 100%;
+        display: block;
+    }
+    header form button{
+        margin-bottom: 10px;
+        width: 70%;
+        margin-right: -9em;
+    }
+    main{
+        text-align: center;
+        height: 22em;
+    }
+    main p{
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+    main div{
+        margin-top: -10px;
+    }
+    section{
+        text-align: center;
+        margin-bottom: 15em;
+    }
+    section p{
+        margin-left: 70px;
+    }
+    section div{
+        float: none;
+        margin-left: 94px;
+        margin-top: 10em;
+    }
+    section div input{
+        margin-bottom: 30px;
+    }
+    section div button{
+        width: 100%;
+        margin-left: 24px;
+    }
+}
+@media(max-width:320px){
+    main{
+        height: 25em;
+    }
+}
+@media(max-width:800px){
+    main p{
+        margin-top: -20px;
+    }
+}
+@media(max-width:280px){
+    header form button{
+        margin-left: -27px;
+    }
+    main{
+        height: 32em;
+    }
+   section p{
+       margin-left: 50px;
+   } 
+   section div{
+    margin-left: 50px; 
+   }
+}

@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background:linear-gradient(-45deg,#ff359b,#da7004,#ff1493);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200% 200%;
+    animation-name: move;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.main{
+    margin-top: 20vh;
+}
+header{
+    text-align: center;
+    margin: auto 70px auto 70px;
+    border: 4px solid #160c0c;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+    padding: 100px 30px 100px 30px;
+}
+header h1{
+    font-size: 77px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px;
+    background: #000;
+    -webkit-text-fill-color: #ffffff;
+    -webkit-text-stroke:1px #000000;
+}
+header p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.greetings{
+    text-align: left;
+}
+nav{
+    margin: 200px 70px 20px 70px;
+    text-align: center;
+    height: 400px;
+}
+nav h2{
+    font-size: 50px;
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+}
+nav ul{
+    margin-top: 70px;
+    list-style: none;
+    display: inline-flex;
+}
+nav ul li{
+    height: 200px;
+    line-height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(225,225,225,0.4);
+    border-right: 1px solid rgba(225,225,225,0.2);
+    border-bottom: 1px solid rgba(225,225,225,0.2);
+    box-shadow: 0 5px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+    transition:all .4s ease-in-out;
+    overflow: hidden;
+}
+nav ul li:hover{
+    transform: translateY(-20px);
+}
+nav ul li:hover .card1{
+    opacity: 0.1;
+}
+nav ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background: rgba(225,225,225,0.09);
+    transform: skewX(45deg) translateX(290px);
+    transition: 0.5s;
+}
+nav ul li:hover::before{
+    transform: skewX(45deg) translateX(-150px);
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: .5px;
+    padding-top: 50px;
+}
+nav ul li a:hover{
+    border: 1px solid #000000;
+    padding: 7px;
+}
+footer{
+    display: flex;
+    text-align: center;
+    border: 3px solid #000000;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+    margin: auto 20px auto 20px;
+}
+footer h2{
+    flex: 1;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+footer ul{
+    flex: 1;
+    list-style: none;
+    border-left: 2px solid;
+    text-align: left;
+}
+footer ul li{
+    padding: 5px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    transition:all 0..7s ease-in-out;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+@keyframes move{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+@media  screen and (max-width:768px) {
+    body{
+        background: no-repeat;
+    }
+    header h1{
+        font-size:30px;
+    }
+    .greetings{
+        font-size: 15px;
+    }
+    nav{
+        margin-top:20px;
+        text-align: center;
+        height: 600px;
+    }
+    nav h2{
+        font-size: 20px;
+    }
+    nav ul{
+        text-align: center;
+        margin-left: -10px;
+        display: block;
+    }
+    nav ul li{
+        background: #000000;
+        border-radius: 0;
+        height: 100px;
+        margin-left: -45px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+        line-height: 100px;
+        width: 250px;
+        backdrop-filter:blur(0);
+        padding-top: -20px;
+    }
+    nav ul li a{
+        color: #ffffff;
+    }
+    footer{
+        height: 120px;
+    }
+    footer h2{
+        font-size: 15px;
+    }
+    footer ul li{
+        margin-bottom: -7px;
+    }
+    footer ul li a{
+        font-size: 15px;
+    }
+}
